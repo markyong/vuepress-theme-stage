@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HomeLayout />
-    <Content />
+    <HomeLayout v-if="$pagination" />
+    <Content v-else />
   </div>
 </template>
 

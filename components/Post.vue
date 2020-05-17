@@ -6,7 +6,7 @@
       :key="index"
     >
       <div class="post-item-title">
-        <a href="#">{{ post.title }}</a>
+        <router-link :to="post.path">{{ post.title }}</router-link>
       </div>
       <div class="create">
         <span>创建于 {{ post.frontmatter.date }}</span>
@@ -15,7 +15,7 @@
       <div class="post-content" v-html="post.excerpt">
       </div>
       <div class="readmore">
-        <a href="">阅读更多</a>
+        <router-link :to="post.path">阅读更多</router-link>
       </div>
     </div>
   </div>
@@ -44,6 +44,11 @@ export default {
     margin 17px 0 14px
     font-weight 600
 
+    a
+      transition color .37s ease
+      &:hover
+        color $themeColor
+
   .create
     padding-left 2px
     padding-bottom 14px
@@ -61,4 +66,11 @@ export default {
       top 3px
       background-color $themeColor
       border-radius 50%
+
+  .readmore
+    margin-top 17px
+    font-size 15px
+    font-weight 600
+    a:hover
+      color $themeColor
 </style>
