@@ -31,7 +31,7 @@ export default {
       }
       const navImg = document.getElementById('header-image')
       const waterRippleEffect = new WaterRippleEffect(navImg, settings)
-      navImg.addEventListener('click', function () {
+      navImg.addEventListener('click', function (e) {
         const { layerX, layerY } = e
         waterRippleEffect.disturb(layerX, layerY)
       })
