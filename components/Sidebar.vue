@@ -6,7 +6,7 @@
       v-for="(item, index) in $themeConfig.nav"
       :key="index"
     >
-      <a :href="item.link">{{ item.text }}</a>
+      <router-link :to="item.link">{{ item.text }}</router-link>
     </div>
   </aside>
 </template>

@@ -14,8 +14,8 @@ module.exports = {
       { text: 'weibo', link: '' }
     ],
     nav: [
-      { text: '关于', link: '/about' },
-      { text: '标签', link: '/tags' }
+      { text: '关于', link: '/about/' },
+      { text: '标签', link: '/tag/' }
     ]
   }
 }

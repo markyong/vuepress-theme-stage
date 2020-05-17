@@ -16,10 +16,8 @@ module.exports = {
           path: '/tag/',
           layout: 'Tag',
           frontmatter: { title: 'Tag' },
-          itemlayout: 'Tag',
-          pagination: {
-            perPagePosts: 3
-          }
+          layout: 'Tags',
+          scopeLayout: 'Tag'
         },
       ]
     }]
