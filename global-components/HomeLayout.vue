@@ -1,8 +1,5 @@
 <template>
-  <div class="home-layout">
-    <Post :posts="$pagination.pages" />
-    <Sidebar />
-  </div>
+  <Post :posts="$pagination.pages" />
 </template>
 
 <script>

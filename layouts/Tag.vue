@@ -1,50 +1,34 @@
 <template>
-  <div class="tag-wrap">
-    <div class="tag-post-list">
-      <ul>
-        <li
-          class="tag-post-item"
-          v-for="(item, index) in $currentTag.pages"
-          :key="index"
-        >
-          <time class="post-itme">{{ item.frontmatter.date }}</time>
-          <router-link class="post-title" :to="item.path">
-            {{ item.title }}
-          </router-link>
-        </li>
-      </ul>
-      <div class="tag-key">{{ $currentTag.key }}</div>
-    </div>
-    <Sidebar />
+  <div class="tag-post-wrap">
+    <ul>
+      <li
+        class="tag-post-item"
+        v-for="(item, index) in $currentTag.pages"
+        :key="index"
+      >
+        <time class="post-itme">{{ item.frontmatter.date }}</time>
+        <router-link class="post-title" :to="item.path">
+          {{ item.title }}
+        </router-link>
+      </li>
+    </ul>
+    <div class="tag-key">{{ $currentTag.key }}</div>
   </div>
 </template>
 
 <script>
-import Sidebar from '@theme/components/Sidebar'
-
 export default {
-  name: 'Tag',
-
-  components: {
-    Sidebar
-  }
+  name: 'Tag'
 }
 </script>
 
 <style lang="stylus">
-.tag-wrap
-  width $homePageWidth
-  margin 30px auto 0
-  display flex
-  justify-content space-between
-  align-items flex-start
-
-  .tag-post-list
-    width $contentWidth
-    padding 7px 27px
-    background-color $colorWhite
-    position relative
-    overflow hidden
+.tag-post-wrap
+  width $contentWidth
+  padding 7px 27px
+  background-color $colorWhite
+  position relative
+  overflow hidden
 
   .tag-post-item
     height 77px
