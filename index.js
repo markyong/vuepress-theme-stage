@@ -18,7 +18,7 @@ module.exports = {
           frontmatter: { title: 'Tag' },
           layout: 'Tags',
           scopeLayout: 'Tag'
-        },
+        }
       ]
     }]
   ]
