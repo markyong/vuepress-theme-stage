@@ -37,13 +37,14 @@
 </template>
 
 <script>
-import backgroundShaking from '../assets/js/avatar'
-
 export default {
   name: 'Owner',
+
   mounted () {
-    backgroundShaking('container_left', 'canvas_left', '#42b983', '#137AB9')
-    backgroundShaking('container_right', 'canvas_right', '#1BB980', '#41b883')
+    import('../assets/js/avatar').then((module) => {
+      module.default('container_left', 'canvas_left', '#42b983', '#137AB9')
+      module.default('container_right', 'canvas_right', '#1BB980', '#41b883')
+    })
   }
 }
 </script>
