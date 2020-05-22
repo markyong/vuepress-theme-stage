@@ -11,6 +11,8 @@ module.exports = {
     subtitle: '喜新恋旧，败事不足',
     social: [
       { text: 'github', link: 'https://github.com/markyong' },
+      { text: 'facebook', link: '' },
+      { text: 'twitter', link: '' },
       { text: 'weibo', link: '' }
     ],
     nav: [

@@ -1,7 +1,9 @@
 <template>
   <header id="header">
     <div class="header-main">
-      <h1 class="title">{{ $site.title }}</h1>
+      <h1 class="title">
+        <router-link to="/">{{ $site.title }}</router-link>
+      </h1>
       <div class="wrap">
         <div class="header-image" id="header-image">
         </div>
@@ -56,9 +58,10 @@ export default {
     height 110px
     line-height 110px
     text-align center
-    color $colorWhite
     font-weight 700
     font-size 35px
+    a
+      color $colorWhite
 
   .wrap
     width $homePageWidth

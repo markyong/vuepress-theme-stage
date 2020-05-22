@@ -12,5 +12,10 @@
     "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-pagination": "^1.0.0-alpha.0",
     "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9"
   }
 }

@@ -1,7 +1,10 @@
 <template>
   <footer id="footer">
     <div class="copyright">&copy; Mark 2019</div>
-    <div>Powered by <a href="" target="_blank">Vuepress</a>. Theme by <a href="">Stage</a></div>
+    <div>
+      Powered by <a href="https://vuepress.vuejs.org/" target="_blank">Vuepress</a>.
+      Theme by <a href="https://github.com/markyong/vuepress-theme-stage" target="_blank">Stage</a>
+    </div>
   </footer>
 </template>
 

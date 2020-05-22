@@ -30,15 +30,30 @@
         :href="item.link"
         target="_blank"
       >
-        {{ item.text }}
+        <font-awesome-icon :icon="['fab', item.text]" />
       </a>
     </div>
   </div>
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faGithub,
+  faFacebook,
+  faTwitter,
+  faWeibo
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faGithub, faFacebook, faTwitter, faWeibo)
+
 export default {
   name: 'Owner',
+
+  components: {
+    FontAwesomeIcon
+  },
 
   mounted () {
     import('../assets/js/avatar').then((module) => {
@@ -88,4 +103,11 @@ export default {
   .social
     height 38px
     line-height 38px
+    text-align center
+
+    a
+      padding 0 4px
+      font-size 24px
+      &:hover
+        color $themeColor
 </style>
