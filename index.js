@@ -14,7 +14,6 @@ module.exports = {
           id: "tag",
           keys: ['tag', 'tags'],
           path: '/tag/',
-          layout: 'Tag',
           frontmatter: { title: 'Tag' },
           layout: 'Tags',
           scopeLayout: 'Tag'
